@@ -133,7 +133,7 @@ export default function RegistrationForm() {
                 ))}
             </div>
 
-            <form onSubmit={handleSubmit} className="glass-panel p-10 md:p-14 shadow-2xl">
+            <form onSubmit={handleSubmit} className="glass-panel p-10 md:p-14 shadow-2xl bg-surface/30">
                 <AnimatePresence mode="wait">
                     {step === 1 && (
                         <motion.div key="step1" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-10">

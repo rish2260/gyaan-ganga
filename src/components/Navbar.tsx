@@ -28,7 +28,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 10);
+            setScrolled(window.scrollY > 20);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -64,7 +64,7 @@ export default function Navbar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="text-[10px] font-black uppercase tracking-[0.2em] text-soft-grey hover:text-primary transition-colors"
+                                className="text-xs font-black uppercase tracking-widest text-soft-grey hover:text-foreground transition-colors"
                             >
                                 {link.name}
                             </Link>
